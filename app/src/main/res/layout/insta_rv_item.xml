@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/insta_layout"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/likeSave_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/like_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/not_liked" />
+
+            <ImageView
+                android:id="@+id/comment_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_comment_ic" />
+
+            <ImageView
+                android:id="@+id/share_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/send_ic" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/save_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/not_save"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="15dp"
+        android:text="999,999 Likes"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save_iv"
+        app:layout_constraintStart_toEndOf="@+id/like_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/caption_tv"
+        android:layout_width="335dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="38dp"
+        android:textColor="@color/black"
+        android:text="cray0imran Whatever is good for your soul, do that
+Even the stars were jealous of the sparkle in her eyes Whatever is good for your soul, do that
+Even the stars were jealous of the sparkle in her eyes Whatever is good for your soul, do that
+Even the stars were jealous of the sparkle in her eyes"/>
+
+    <TextView
+        android:id="@+id/more_less"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..more"
+        android:tag="off"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#9C9B9B"
+        android:layout_gravity="end"
+        />
+
+
+</LinearLayout>
