@@ -1,17 +1,11 @@
 package com.unitapplications.captiongram.Adapters;
 
-import static android.content.Context.MODE_PRIVATE;
 
 import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Typeface;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.StyleSpan;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,25 +16,19 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.unitapplications.captiongram.Data.favDbHandler;
-
 import com.unitapplications.captiongram.Models.FavModel;
-import com.unitapplications.captiongram.Models.InstaModel;
 import com.unitapplications.captiongram.R;
 
 import java.util.ArrayList;
 
-public class InstaAdapter extends RecyclerView.Adapter<InstaAdapter.ViewHolder> {
+public class FavAdapter extends RecyclerView.Adapter<FavAdapter.ViewHolder> {
 
     private static Context context;
-    private ArrayList<InstaModel> instaModelArrayList;
-    favDbHandler favDbHandler;
-//    private Context context;
+    private ArrayList<FavModel> favModelArrayList;
 
     // constructor
-    public InstaAdapter(ArrayList<InstaModel> instaModelArrayList, Context context) {
-        this.instaModelArrayList = instaModelArrayList;
+    public FavAdapter(ArrayList<FavModel> favModelArrayList, Context context) {
+        this.favModelArrayList = favModelArrayList;
         this.context = context;
     }
 
@@ -58,43 +46,26 @@ public class InstaAdapter extends RecyclerView.Adapter<InstaAdapter.ViewHolder> 
         // on below line we are setting data
         // to our views of recycler view item.
 
-        InstaModel insta_model = instaModelArrayList.get(position);
+        FavModel favModel = favModelArrayList.get(position);
+        holder.like_iv.setImageResource(R.drawable.liked);
+        holder.caption_tv.setText(favModel.getFav_caption());
 
-        holder.caption_tv.setText(insta_model.getCaption());
         holder.like_iv.setOnClickListener(view -> {
-            holder.like_iv.setImageResource(R.drawable.liked);
-          favDbHandler = new favDbHandler(context);
-            FavModel favModel = new FavModel();
-            favModel.setFav_caption(insta_model.getCaption());
-          favDbHandler.addFav(favModel);
-           /* Intent fav_intent = new Intent(context, FavActivity.class);
-            fav_intent.putExtra("fav_cap",insta_model.getCaption());
-            context.startActivity(fav_intent);*/
+         //   holder.like_iv.setImageResource(R.drawable.not_liked);
         });
         holder.copy_iv.setOnClickListener(view -> {
             ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-            ClipData clip = ClipData.newPlainText("cap_hash", insta_model.getCaption());
+            ClipData clip = ClipData.newPlainText("cap_hash", favModel.getFav_caption());
             clipboard.setPrimaryClip(clip);
-          Toast.makeText(context, "Caption & Hashtags are Copied "+"\u2713", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "Caption & Hashtags are Copied "+"\u2713", Toast.LENGTH_LONG).show();
         });
 
 
     }
-    @SuppressLint("NotifyDataSetChanged")
-    public void filteringList(ArrayList<InstaModel> allFilteredCaptions) {
-        instaModelArrayList = allFilteredCaptions;
-
-        notifyDataSetChanged();
-        // i don't know about this notify method i just did according
-        // to tutorial of search view
-        //18 OCt 2022 now i know about notify method
-        //this method notify the adapter that data is changed hehehe
-    }
-
     @Override
     public int getItemCount() {
         // returning the size of our array list
-        return instaModelArrayList.size();
+        return favModelArrayList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -102,11 +73,10 @@ public class InstaAdapter extends RecyclerView.Adapter<InstaAdapter.ViewHolder> 
         // creating variables for our text views.
         private TextView caption_tv;
         private ImageView like_iv,copy_iv;
-        private LinearLayout insta_layout;
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            
             caption_tv = itemView.findViewById(R.id.caption_tv);
             like_iv = itemView.findViewById(R.id.like_iv);
             copy_iv = itemView.findViewById(R.id.copy_iv);
