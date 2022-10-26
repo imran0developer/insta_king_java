@@ -1,4 +1,4 @@
-package com.unitapplications.captiongram;
+package com.unitapplications.InstaKing;
 
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.unitapplications.captiongram">
+    package="com.unitapplications.InstaKing">
 
     <application
         android:allowBackup="true"
@@ -11,13 +11,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CaptionGram"
+        android:theme="@style/Theme.InstaKing"
         tools:targetApi="31">
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
         <activity
             android:name=".FavActivity"
             android:exported="false" />
         <activity
-            android:name=".noteActivity"
+            android:name=".NoteActivity"
             android:exported="false" />
         <activity
             android:name=".CaptionActivity"

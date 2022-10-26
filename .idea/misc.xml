@@ -4,25 +4,38 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/add_ic.xml" value="0.152" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/gradient.xml" value="0.223" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.152" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_baseline_category_24.xml" value="0.152" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_baseline_content_copy_24.xml" value="0.223" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_baseline_expand_more_24.xml" value="0.223" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.152" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.223" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_comment_add_svgrepo_com.xml" value="0.223" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_comment_ic.xml" value="0.1295" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_copy.xml" value="0.152" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/ic_image.xml" value="0.152" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/liked.xml" value="0.1295" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/liked_white.xml" value="0.152" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/not_liked.xml" value="0.223" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/not_save.xml" value="0.223" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/rate_us_ic.xml" value="0.223" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/sample_img.xml" value="0.223" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/send_ic.xml" value="0.1295" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/drawable/stroke.xml" value="0.152" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/activity_caption.xml" value="0.34270833333333334" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/activity_category.xml" value="0.34270833333333334" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/activity_fav.xml" value="0.34270833333333334" />
-        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/activity_main.xml" value="0.3374358974358974" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/activity_note.xml" value="0.34270833333333334" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/activity_sign_in.xml" value="0.28888888888888886" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/cap_rv.xml" value="0.28888888888888886" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/caption_rv_item.xml" value="0.3374358974358974" />
-        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/category_rv_item.xml" value="0.28888888888888886" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/category_rv_item.xml" value="0.67" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/insta_rv.xml" value="0.3374358974358974" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/insta_rv_item.xml" value="0.3374358974358974" />
         <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/note_rv.xml" value="0.28888888888888886" />
+        <entry key="..\:/Android Projects/CaptionGram/app/src/main/res/layout/note_rv_item.xml" value="0.3374358974358974" />
       </map>
     </option>
   </component>
